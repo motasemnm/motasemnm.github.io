@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>motasem mohammed 167098</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about -col-1">
+                    
+                    <img src="image\my_photo.png">
+                   
+                    
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="header-text">
+                        
+                        <h1>Hi, I'm<span> Motasem Moahmmed </span><br>167098</h1>
+                        <p>Cyber Security Student</p>
+
+                    </div>
+                    <p><br>My name is Motasem, and I am currently a third-year Cyber Security student at Jordan University of Science and Technology. 
+                        Throughout my studies, I have learn progeamming, like C++, Python, HTML, and CSS. 
+                        My passion for technology and security drives me to explore new methods of protecting systems and networks, 
+                        while continuously enhancing my programming skills. As I progress in my academic journey
+                        I am eager to apply my knowledge and contribute to the field of cybersecurity.
+                         <br>
+                         <a href="mailto:mnmohammed22@cit.just.edu.jo">Mail To Me</a>
+                         
+                         <br><br>
+                         <nav>
+                         <ul>
+                            <li><a href="#content">Contact</a></a></li>
+                        </ul>
+                        </nav>
+                        
+
+                    </p> 
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills',event)">skills</p>
+                    <p class="tab-links" onclick="opentab('education',event)">education</p>
+                    <p class="tab-links" onclick="opentab('programming',event)">programming</p>
+                   </div>
+                   
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing web/app interfaces</li>
+                        <li><span>Web Development</span><br>web app Development</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Cyber security</span></li>
+        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="programming">
+                    <ul>
+                        <li><span>c++</span><br><a href="https://www.w3schools.com/cpp/cpp_intro.asp">Learn</a></li>
+                        <li><span>Patyhon</span><br><a href="https://www.w3schools.com/python/">Learn</a></li>
+                    </ul>
+                   </div>
+         
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+    </script>
+    <div id="content">
+    <div class="contact-right">
+        <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <input type="text" name="country" placeholder="Country" required><br><br>
+            <button type="submit" class="btn btn2">Submit</button>
+    </div>
+    </div>
+
+</body>
+</html>
